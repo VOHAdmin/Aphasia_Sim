@@ -1,6 +1,6 @@
 # Aphasia_Sim
 
-Aphasia Simulator
+<b><i>Aphasia Simulator</i></b>
 Voices of Hope for Aphasia
 
 Aphasia Simulations module was developed as a collaboration project
