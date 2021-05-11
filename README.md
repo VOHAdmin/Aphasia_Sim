@@ -1,7 +1,6 @@
 # Aphasia_Sim
 
-<b><i>Aphasia Simulator</i></b>
-Voices of Hope for Aphasia
+<b><i>Voices of Hope for Aphasia</i></b>
 
 Aphasia Simulations module was developed as a collaboration project
 between Dr. Jacqueline Hinckley and Keen Research. Dr. Hinckley is a
