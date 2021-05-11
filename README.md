@@ -17,9 +17,9 @@ This site was updated for use with the new Voices of Hope for Aphasia
 website in collabortion with the University of Florida Chapter of the 
 Association for Information Systems pro-bono consulting operations.
 
-Hosting Credits:<b>
-Institution: 	  University of Florida
-Organization: 	Association for Information Systems
-Branch: 		    Community Outreach and Development
-Management:		  Justin H, Jashmina P
-Analysts:		    Devin D, Manuel U, Valdemar T
+Hosting Credits:<br>
+Institution: 	  University of Florida<br>
+Organization: 	Association for Information Systems<br>
+Branch: 		    Community Outreach and Development<br>
+Management:		  Justin H, Jashmina P<br>
+Analysts:		    Devin D, Manuel U, Valdemar T<br>
