@@ -18,8 +18,8 @@ website in collabortion with the University of Florida Chapter of the
 Association for Information Systems pro-bono consulting operations.
 
 Hosting Credits:<br>
-Institution: 	  <p style="margin-left: 40px">University of Florida</p><br>
-Organization: 	Association for Information Systems<br>
-Branch: 		    Community Outreach and Development<br>
-Management:		  Justin H, Jashmina P<br>
-Analysts:		    Devin D, Manuel U, Valdemar T<br>
+Institution:    University of Florida<br>
+Organization:   Association for Information Systems<br>
+Branch:         Community Outreach and Development<br>
+Management:     Justin H, Jashmina P<br>
+Analysts:       Devin D, Manuel U, Valdemar T<br>
