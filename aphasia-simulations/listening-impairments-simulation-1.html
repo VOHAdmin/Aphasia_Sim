@@ -24,9 +24,11 @@
     <link type="text/css" rel="stylesheet" href="../static/css/ie.css" media="screen" />
   <![endif]-->
   <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../static/css/ie7.css" media="screen" /><![endif]-->
-
+  
+  <!-- Credit to https://html5media.info/ for below script 
+  <script src="//api.html5media.info/1.2.2/html5media.min.js"></script> -->
+  
   <script type="text/javascript" src="../static/js/jquery.js" charset="utf-8"></script>
-  <script type="text/javascript" src="../static/js/jwplayer/jwplayer.js" charset="utf-8"></script>
   <script type="text/javascript" src="../static/js/jquery.hoverIntent.minified.js" charset="utf-8"></script>
   <script type="text/javascript" src="../static/js/application.js" charset="utf-8"></script>
   
@@ -40,7 +42,7 @@
 
     <div id="content">
       
-      <h1>Aphasia Simulations</h1>
+      <h1>Aphasia Simulations</h1><img class="voh" src="../static/graphics/VOH_logo.png" href="VOH LINK TO NEW SITE" target="_blank"><h4>Hosted By</h4>
       
       <div id="sim-nav">
         <ul class="clearfix">
@@ -69,8 +71,9 @@
       <div id="simulation">
         <h3>Click play to hear the question and then choose the appropriate answer.</h3>
         
-        <div id="task">
-          <a id="play-button" href="#">PLAY</a>
+        <!-- Audio container for <source> tags in array questionsAudio -->
+        <div class = "audio">
+            <audio id="list_audio_player" controls></audio>
         </div>
 
         <div id="answers">
@@ -92,24 +95,13 @@
       </div>
       
     </div>
-  </div><!-- #container -->
-<div style="display: none; visibility: hidden;" >
-  <div id="player"></div>
-</div>
+  </div>
+
   <!--#include virtual="../footer.html" -->   
 
     
 <script type="text/javascript">
   var CURRENT_QUESTION=1;
-
-  jwplayer("player").setup( { flashplayer: "../static/js/jwplayer/player.swf",
-                                   width: 0, height: 0,
-                                   events: {
-                                     onComplete: function() {
-                                       $("#play-button").removeClass('pause');
-                                     }   
-                                    }
-      });
 
   var questionsData = {"questions": [
       {"audio_url": "../static/assets/audio/listening-sim-1-q1.mp3", "correct_image_url": "../static/assets/images/nose.jpg", "wrong_image_url": "../static/assets/images/hose.jpg", "description": "<p>Now, that was confusing wasn't it...Sometimes the person with aphasia may hear the sounds but may perceive them in the wrong order.</p><p>In this example, instead of NOSE, they may perceive what was said as SNOW.</p> <p>Click on Next Question below to try a few more examples.<p>"},

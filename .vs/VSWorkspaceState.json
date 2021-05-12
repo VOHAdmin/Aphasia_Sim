@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aphasia-simulations",
+    "\\static",
+    "\\static\\css"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\aphasia-simulations\\listening-impairments-simulation-1.html",
   "PreviewInSolutionExplorer": false
 }

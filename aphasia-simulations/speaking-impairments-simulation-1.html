@@ -26,7 +26,6 @@
   <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../static/css/ie7.css" media="screen" /><![endif]-->
 
   <script type="text/javascript" src="../static/js/jquery.js" charset="utf-8"></script>
-  <script type="text/javascript" src="../static/js/jwplayer/jwplayer.js" charset="utf-8"></script>
   <script type="text/javascript" src="../static/js/jquery.hoverIntent.minified.js" charset="utf-8"></script>
   <script type="text/javascript" src="../static/js/application.js" charset="utf-8"></script>
   
@@ -39,11 +38,11 @@
     <!--#include virtual="../header.html" -->   
     <div id="content">
       
-      <h1>Aphasia Simulations</h1>
+      <h1>Aphasia Simulations</h1><img class="voh" src="../static/graphics/VOH_logo.png" href="VOH LINK TO NEW SITE" target="_blank"><h4>Hosted By</h4>
       
       <div id="sim-nav">
         <ul class="clearfix">
-<li><a href="../index.html">Introduction</a></li>
+          <li><a href="../index.html">Introduction</a></li>
           <li><a href="what-is-aphasia.html">What is Aphasia?</a></li>
           <li><a href="listening-impairments.html">Listening</a></li>
           <li><a href="reading-impairments.html">Reading</a></li>
@@ -66,7 +65,10 @@
       
       <div id="simulation">
         <h3>Click on the picture to hear how a person with aphasia might describe it.</h3>
-        
+      
+        <!-- Audio Container -->
+        <audio id="speak_audio_player"></audio>
+
         <div id="answers">
           <ul class="images clearfix" style="margin-left: 330px">
             <li id="img1"><a href="#"><img id="image" src="" width="165" height="130"/></a><div class="confirmation"></div></li>
@@ -85,16 +87,13 @@
       </div>
       
     </div>
-  </div><!-- #container -->
+  </div>
+  
   <!--#include virtual="../footer.html" -->   
     
   <div style="display: none; visibility: hidden;"><div id="player"></div></div>
 <script type="text/javascript">
   var CURRENT_QUESTION=1;
-
-  jwplayer("player").setup( { flashplayer: "../static/js/jwplayer/player.swf",
-                                   width: 0, height: 0,
-      });
 
   var questionsData = {"questions": [
       {"audio_url": "../static/assets/audio/sleep.mp3", "image_url": "../static/assets/images/bed.jpg"},

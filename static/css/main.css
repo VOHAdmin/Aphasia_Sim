@@ -38,6 +38,7 @@ h1 {
   color:#f60;
   letter-spacing:-1px;
   padding:0.7em 0;
+  display: inline-block;
 }
 
 h2 {
@@ -46,6 +47,15 @@ h2 {
   font-weight:bold;
   padding:1em 0 1em 0;
   text-align:center;
+}
+
+h4 {
+  font-size:1.8em;
+  color:#aaa;
+  font-weight:bold;
+  padding:25px 0 0 0;
+  float: right;
+  display: inline-block;
 }
 
 a.icon:link,
@@ -110,6 +120,15 @@ a.icon:visited {
 
 strong {
   font-weight: bold;
+}
+
+.voh {
+	height:70px;
+	width:auto;
+	top: 50%;
+	display: inline-block;
+	float: right;
+	padding: 2px 0 0 0;
 }
 
 /* 5. Content */
@@ -190,6 +209,12 @@ strong {
 
 #sim-sub-nav a{
   color:#666;
+}
+
+
+.audio {
+  text-align: center;
+  padding: 20px 0 15px 0;
 }
 
 

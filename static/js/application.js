@@ -30,7 +30,9 @@ function commonDocReady() {
 
 
 function setupListeningSim1Question(question) {
-  jwplayer().load({file: question.audio_url});
+  // Cycles through array of <source> tags with audio file paths and passes them into the <audio> tag on HTML page
+  document.getElementById("list_audio_player").src = question.audio_url;
+  
   $('#img1, #img2').removeClass('correct-answer wrong-answer correct wrong');
   if (Math.random() > .5) {
     $('#img1').addClass('correct-answer').find('img').fadeOut('slow', function() {
@@ -83,25 +85,13 @@ function listeningSim1DocReady(nextUrl) {
   setupListeningSim1Question(questionsData.questions[0]);
   $('#sim-total-count').html(questionsData.questions.length);
 
-  $('#play-button').click(function() {
-			    if (jwplayer().getState() == "PLAYING") {
-			      jwplayer().stop();
-			      $(this).removeClass('pause');
-			    } else {
-			      $(this).addClass('pause');
-			      jwplayer().play();
-			    }
-			    
-			    return false;
-			  });
-  
   // next button
   $(".next").click(function() {
 		     CURRENT_QUESTION++;
 		     if (CURRENT_QUESTION <= questionsData.questions.length) {
-		       setupListeningSim1Question(questionsData.questions[CURRENT_QUESTION-1]);
+			   setupListeningSim1Question(questionsData.questions[CURRENT_QUESTION-1]);
 		       if (CURRENT_QUESTION == questionsData.questions.length) {
-			 $('.next').children().html("Next Simulation");
+				 $('.next').children().html("Next Simulation");
 		       }
 
 		       // re-enable clicks
@@ -117,18 +107,6 @@ function listeningSim1DocReady(nextUrl) {
 
 
 function listeningSim2DocReady() {
-  $('#play-button').click(function() {
-			     if (jwplayer().getState() == "PLAYING") {
-			       jwplayer().stop();
-			       $(this).removeClass('pause');
-			     } else {
-			       $(this).addClass('pause');
-			       jwplayer().play();
-			     }
-
-			     return false;
-			   });
-  
   $('.correct-answer').click(function() {
 			       $(this).addClass('sim-correct');
 			       $(this).parent().parent().find('a').unbind('click').css('cursor', 'default').click(function() { return false; });
@@ -332,19 +310,18 @@ function writingSim3DocReady() {
 }
 
 function setupSpeakingSim1Question(question) {
+  document.getElementById("speak_audio_player").src = question.audio_url;
   $('#image').fadeOut().attr('src', question.image_url).fadeIn('slow');
   $('#sim-current-count').html(CURRENT_QUESTION);
 }
 
-
-
 function speakingSim1DocReady(nextUrl) {
   setupSpeakingSim1Question(questionsData.questions[0]);
   $('#sim-total-count').html(questionsData.questions.length);
-
-  jwplayer().load({file: questionsData.questions[0].audio_url});
+  
+  //Event Listener to start audio
   $('#img1').click(function() {
-		     jwplayer().play();
+		     document.getElementById("speak_audio_player").play();
 		     return false;
 		   });
 
