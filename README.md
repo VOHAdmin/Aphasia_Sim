@@ -13,7 +13,7 @@ services focused on helping with speech rehabilitation of people with
 aphasia.
 
 This site was updated for use with the new Voices of Hope for Aphasia 
-website in collabortion with the University of Florida Chapter of the 
+website in collaboration with the University of Florida Chapter of the 
 Association for Information Systems pro-bono consulting operations.
 
 Hosting Credits:<br>
