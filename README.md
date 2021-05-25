@@ -20,5 +20,3 @@ Hosting Credits:<br>
 Institution:    University of Florida<br>
 Organization:   Association for Information Systems<br>
 Branch:         Community Outreach and Development<br>
-Management:     Justin H, Jashmina P<br>
-Analysts:       Devin D, Manuel U, Valdemar T<br>
